@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.addProductBg{
+
+  background-image: url("../../assets/addproductbackground.jpg");
+}
+.lobsterFont{
+
+  font-family: 'Lobster', cursive;
+}
