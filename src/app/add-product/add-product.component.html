@@ -1,0 +1,67 @@
+<div>
+  <h1 class="text-white text-center">Ajouter un produit</h1>
+  <div class=" container mt-5 " style="width:500px;">
+
+
+
+    <form class="" #formAddProduct="ngForm" (ngSubmit)="addProduct(formAddProduct)">
+      <div class="form-group ">
+        <!-- <label class="text-white" for="">Name</label> -->
+        <input class="form-control" name="name" type="text" placeholder="Name" ngModel #name="ngModel" required minlength=3>
+      </div>
+      <div class="alert alert-danger " *ngIf="name.touched && !name.valid">
+        <div *ngIf="name.errors.required">The product name is a required field</div>
+        <div *ngIf="name.errors.minlength">The minimum is 3 characters</div>
+      </div>
+      <div class="form-group d-flex justify-content-around container mt-3 mb-3">
+          <label class="text-white" for=""><b>Category :</b></label> <br>
+
+          <div class="d-flex justify-content-around container" style="width:300px;">
+          <div class="d-flex ">
+            <div class="d-flex align-items-center">
+              <input type="radio" id="primary-outlined" class="" value="Atomiseur"   name="category"
+                  ngModel #category="ngModel" required>
+                  <div class="text-white"><b>Atomiseur</b></div> </div>
+
+          </div>
+
+          <div class="d-flex ">
+            <div class="d-flex align-items-center">
+              <input type="radio" class="" name="category" value="Liquid"  ngModel
+                #category="ngModel"></div>
+
+             <div class="text-white"><b>Liquid</b></div>
+          </div>
+
+
+        </div>
+
+      </div>
+      <div class="alert alert-danger" *ngIf="category.invalid && category.touched">
+        The product category is a required field
+      </div>
+     <!--<div class="alert alert-danger" *ngIf="category.invalid && category.touched">
+        The product category is a required field
+      </div>-->
+      <div class="form-group"><!-- <label class="text-white" for="">price</label> -->
+        <input class="form-control" placeholder="Price" name="price" type="text" ngModel #price="ngModel" required pattern=[0-9]+></div>
+      <div class="alert alert-danger" *ngIf="price.invalid && price.touched">
+        <div *ngIf="price.errors.required">The product price is a required field</div>
+        <div *ngIf="price.errors.pattern">The product price must be numeric</div>
+
+      </div>
+      <div class="form-group mt-3 mb-3"><!-- <label class="text-white" for="">photo</label> --><input class="form-control" placeholder="PhotoURL" name="photo"
+          type="text" ngModel #photo="ngModel" required></div>
+      <div class="alert alert-danger" *ngIf="photo.invalid && photo.touched">
+        The product photo is a required field
+      </div>
+      <div class="form-group mt-3 mb-3"><textarea class="form-control"
+          name="description"  placeholder="Description" ngModel #description="ngModel" required> </textarea></div>
+      <div class="alert alert-danger" *ngIf="description.invalid && description.touched">
+        The product description is a required field
+      </div>
+      <button class="btn btn-warning" [disabled]="formAddProduct.invalid" type="submit">
+        Ajouter Produit</button>
+    </form>
+  </div>
+</div>
