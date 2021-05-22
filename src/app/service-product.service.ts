@@ -25,4 +25,8 @@ return  this.http.get<Product[]>('http://localhost:3000/productlist')
     return this.http.get<Product>('http://localhost:3000/productlist/'+i)
 
   }
+  getLength(){
+   return Object.keys(this.http.get<Product[]>('http://localhost:3000/productlist')).length
+
+  }
 }

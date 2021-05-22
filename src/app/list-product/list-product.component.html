@@ -2,11 +2,14 @@
 <div class="pt-5">
 <input class="container form-control  mb-5" name="x" placeholder="search ..." [(ngModel)]="search">
 
+<h1 class="text-white container">{{l}}</h1>
+
 
 
 <div class="d-flex justify-content-around">
 
 <div   *ngFor="let item of listProduct; let i = index ; ">
+  <button (click)="like(i)"><div [ngClass]="like(i)" class=" position-relative"></div></button>
 
 <app-product *ngIf="search==null ||item.category.toLowerCase().includes(search.toLowerCase()) || item.name.toLowerCase().includes(search.toLowerCase())  "  [Product]="item"  ></app-product>
 
