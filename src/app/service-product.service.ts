@@ -7,6 +7,8 @@ import { Injectable } from '@angular/core';
 })
 export class ServiceProductService {
 
+  url ='http://localhost:3000/productlist/'
+
   constructor( private http:HttpClient) { }
 
   getProducts( ){
@@ -25,8 +27,14 @@ return  this.http.get<Product[]>('http://localhost:3000/productlist')
     return this.http.get<Product>('http://localhost:3000/productlist/'+i)
 
   }
-  getLength(){
+  /* getLength(){
    return Object.keys(this.http.get<Product[]>('http://localhost:3000/productlist')).length
+
+  } */
+
+  postProduct(product: Product){
+
+    return this.http.post(this.url , product)
 
   }
 }

@@ -2,16 +2,18 @@
 <div class="pt-5">
 <input class="container form-control  mb-5" name="x" placeholder="search ..." [(ngModel)]="search">
 
-<h1 class="text-white container">{{l}}</h1>
 
 
 
-<div class="d-flex justify-content-around">
+<div class="d-flex justify-content-around flex-wrap">
 
 <div   *ngFor="let item of listProduct; let i = index ; ">
-  <button (click)="like(i)"><div [ngClass]="like(i)" class=" position-relative"></div></button>
+<div *ngIf="search==null ||item.category.toLowerCase().includes(search.toLowerCase()) || item.name.toLowerCase().includes(search.toLowerCase())  ">
+  <div style="cursor: pointer;" (click)="like(i)" [ngClass]="tab[i]?'heart-shape' : 'heart-shape-gray'" class=" position-relative"></div>
 
-<app-product *ngIf="search==null ||item.category.toLowerCase().includes(search.toLowerCase()) || item.name.toLowerCase().includes(search.toLowerCase())  "  [Product]="item"  ></app-product>
+  <app-product   [Product]="item"  >   </app-product>
+</div>
+
 
 
 

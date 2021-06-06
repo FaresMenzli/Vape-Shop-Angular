@@ -3,7 +3,9 @@
   background-image: url("../../assets/bg6.jpg");
 
   background-size: cover;
-  height: 844px;
+
+  min-height: 844px;
+  min-width: 1024px;
 
 }
 .permanent

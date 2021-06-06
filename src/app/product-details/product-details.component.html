@@ -1,16 +1,27 @@
-<div class="bg-light container d-flex">
+<div >
+<div class="bg-light container d-flex pt-5">
 
-<div > <img src={{productdetails.photo}} alt="product photo"></div>
+  <div> <img src={{productdetails.photo}} alt="product photo"></div>
 
-<div class="d-flex align-items-center">
-<div class="d-flex align-items-center">{{productdetails.name}}</div>
-<div> Product price </div>
-<div>Product Category</div>
-<div>Description</div>
-<div>rating</div>
+  <div class="d-flex pt-5 ">
+
+    <div style="  width: 500px;">
+      <div class="d-flex justify-content-center pb-1"><b>{{productdetails.name}}</b></div>
+      <hr>
+
+      <div class="d-flex flex-column justify-content-center align-items-center pl-5">
+      <div> Product Category : {{productdetails.category}} </div>
+      <div>Description : {{productdetails.description}}</div>
+      <div>price : {{productdetails.price}} DT</div>
+      <div>rating : {{productdetails.rating}}</div>
+      </div>
+
+    </div>
+
+  </div>
+  <div> </div>
+
 </div>
-<div> </div>
-
 </div>
 id:number
 name : string

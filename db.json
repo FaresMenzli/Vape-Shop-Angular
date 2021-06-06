@@ -1,8 +1,85 @@
 {
-  "productlist" :[
-  {"id": 1,"name": "4", "category":"Atomiseur" ,"description": "desc 1", "photo":"https://www.lepetitvapoteur.com/29842-thickbox/kit-aegis-max-geek-vape.jpg", "price": 18, "rating":5 },
-  {"id":2,"name": "5","category":"liquid" , "description": "desc 2","photo":"https://www.eliquidandco.com/18655-large_default/arome-concentre-vampire-vape-virginia.jpg", "price": 21,"rating":5 },
-  {"id":3,"name": "6","category":"Atomiseur", "description": "desc 3","photo":"https://www.lepetitvapoteur.com/31243-large_default/kit-aegis-legend-200w-geek-vape.jpg", "price": 16,"rating":5 }
-
-
-]}
+  "productlist": [
+    {
+      "id": 1,
+      "name": "4",
+      "category": "Atomiseur",
+      "description": "desc 1",
+      "photo": "https://www.lepetitvapoteur.com/29842-thickbox/kit-aegis-max-geek-vape.jpg",
+      "price": 18,
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "5",
+      "category": "liquid",
+      "description": "desc 2",
+      "photo": "https://www.eliquidandco.com/18655-large_default/arome-concentre-vampire-vape-virginia.jpg",
+      "price": 21,
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "name": "6",
+      "category": "Atomiseur",
+      "description": "desc 3",
+      "photo": "https://www.lepetitvapoteur.com/31243-large_default/kit-aegis-legend-200w-geek-vape.jpg",
+      "price": 16,
+      "rating": 5
+    },
+    {
+      "id": 71,
+      "name": "Geraldine Mays",
+      "category": "Atomiseur",
+      "price": "175",
+      "photo": "Sed suscipit a qui a",
+      "description": "Nihil sint consequat",
+      "rating": 2
+    },
+    {
+      "id": 94,
+      "name": "Wynne Stein",
+      "category": "Atomiseur",
+      "price": "91",
+      "photo": "https://www.lepetitvapoteur.com/34003-large_default/e-liquide-pulp-clementine-de-sicile.jpg",
+      "description": "Exercitation proiden",
+      "rating": 2
+    },
+    {
+      "id": 49,
+      "name": "Rajah Terrell",
+      "category": "Atomiseur",
+      "price": "856",
+      "photo": "https://www.lepetitvapoteur.com/34003-large_default/e-liquide-pulp-clementine-de-sicile.jpg",
+      "description": "Doloribus quisquam m",
+      "rating": 2
+    },
+    {
+      "id": 36,
+      "name": "Hope Carpenter",
+      "category": "Liquid",
+      "price": "541",
+      "photo": "https://www.lepetitvapoteur.com/29448-large_default/concentre-fury-30-ml-ultimate.jpg",
+      "description": "Reprehenderit at an",
+      "rating": 2
+    },
+    {
+      "id": 43,
+      "name": "Ragnarok",
+      "category": "Liquid",
+      "price": "435",
+      "photo": "https://www.lepetitvapoteur.com/28862-large_default/concentre-ragnarok-30-ml-ultimate.jpg",
+      "description": "Temporibus explicabo",
+      "rating": 5
+    },
+    {
+      "id": 51,
+      "name": "Legend",
+      "category": "Liquid",
+      "price": "325",
+      "photo": "https://www.lepetitvapoteur.com/31356-thickbox/concentre-ragnarok-legend-30-ml-ultimate.jpg",
+      "description": "Dolores fugit quisq",
+      "rating": 2
+    }
+  ]
+}

@@ -5,9 +5,21 @@
 
 
     <form class="" #formAddProduct="ngForm" (ngSubmit)="addProduct(formAddProduct)">
+
+
+     <div class="form-group mt-3 mb-3 ">
+
+      <input class="form-control" name="id" type="number" placeholder="Id..." ngModel #id="ngModel" required  pattern=[0-9]+>
+    </div>
+    <div class="alert alert-danger " *ngIf="id.touched && !id.valid">
+      <div *ngIf="id.errors.required">The product id is a required field</div>
+      <div *ngIf="id.errors.pattern">The product id must be numeric</div>
+    </div>
+
+
       <div class="form-group ">
         <!-- <label class="text-white" for="">Name</label> -->
-        <input class="form-control" name="name" type="text" placeholder="Name" ngModel #name="ngModel" required minlength=3>
+        <input class="form-control" name="name" type="text" placeholder="Name..." ngModel #name="ngModel" required minlength=3>
       </div>
       <div class="alert alert-danger " *ngIf="name.touched && !name.valid">
         <div *ngIf="name.errors.required">The product name is a required field</div>
@@ -44,7 +56,7 @@
         The product category is a required field
       </div>-->
       <div class="form-group"><!-- <label class="text-white" for="">price</label> -->
-        <input class="form-control" placeholder="Price" name="price" type="text" ngModel #price="ngModel" required pattern=[0-9]+></div>
+        <input class="form-control" placeholder="Price..." name="price" type="text" ngModel #price="ngModel" required pattern=[0-9]+></div>
       <div class="alert alert-danger" *ngIf="price.invalid && price.touched">
         <div *ngIf="price.errors.required">The product price is a required field</div>
         <div *ngIf="price.errors.pattern">The product price must be numeric</div>
@@ -56,12 +68,23 @@
         The product photo is a required field
       </div>
       <div class="form-group mt-3 mb-3"><textarea class="form-control"
-          name="description"  placeholder="Description" ngModel #description="ngModel" required> </textarea></div>
+          name="description"  placeholder="Description..." ngModel #description="ngModel" required> </textarea></div>
       <div class="alert alert-danger" *ngIf="description.invalid && description.touched">
         The product description is a required field
       </div>
-      <button class="btn btn-warning" [disabled]="formAddProduct.invalid" type="submit">
+
+      <div class="form-group mt-3 mb-3 ">
+
+        <input class="form-control" name="rating" type="number" placeholder="Rating..." ngModel #rating="ngModel" required  pattern=[0-5]>
+      </div>
+      <div class="alert alert-danger " *ngIf="rating.touched && !rating.valid">
+        <div *ngIf="rating.errors.required">The product rating is a required field</div>
+        <div *ngIf="rating.errors.pattern">The product rating must be numeric and between 0 and 5</div>
+      </div>
+
+      <button class="btn btn-warning"  [disabled]="formAddProduct.invalid" type="submit">
         Ajouter Produit</button>
+        <!-- <div *ngIf ="sent"><a routerLink="/listproduct"></a></div> -->
     </form>
   </div>
 </div>
