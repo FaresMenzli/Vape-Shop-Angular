@@ -1,3 +1,4 @@
+import { UpdateComponent } from './update/update.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ListProductComponent } from './list-product/list-product.component';
 import { AddProductComponent } from './add-product/add-product.component';
@@ -12,6 +13,7 @@ const routes : Routes = [
   {path:'addproduct' ,component: AddProductComponent},
   {path: 'listproduct' , component: ListProductComponent},
   {path: 'listproduct/:id' , component: ProductDetailsComponent},
+  {path: 'update/:id' , component:UpdateComponent}
 
   /*{path:'**', component: NotfoundComponent}*/
   ];

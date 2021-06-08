@@ -37,4 +37,11 @@ return  this.http.get<Product[]>('http://localhost:3000/productlist')
     return this.http.post(this.url , product)
 
   }
+  deleteProduct(id:number){
+    return this.http.delete('http://localhost:3000/productlist/'+id)
+  }
+  updateProduct(product: Product){
+
+    return this.http.put('http://localhost:3000/productlist/'+product.id, product)
+  }
 }

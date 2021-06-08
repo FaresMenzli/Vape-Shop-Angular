@@ -4,7 +4,7 @@
   </tr>
 </table> -->
 
-<div class="moviecard">
+<div class="pcard ">
   <div> <h2 class="cardtitre">{{Product.name}}</h2>
  <!-- <img class="hart position-relative" src="../../assets/like.png" width="30px" height="30px" alt=""> </div> -->
 </div>
@@ -16,7 +16,12 @@
 
   <div><button>Supprimer</button></div>
   </div> -->
-  <input routerLink={{Product.id}} type="button" value="Details" class="btn btn-danger">
+  <div class="d-flex justify-content-center mb-1 pb-1">
+  <input routerLink={{Product.id}} type="button" value="Details" class="btn btn-outline-warning">
+  <input (click)="Delete(Product.id)" type="button" value="Delete" class="btn btn-outline-danger">
+  <input routerLink="/update/{{Product.id}}" type="button" value="Update" class="btn btn-outline-primary">
+</div>
+
   <p class="rating">{{Product.rating}}</p>
 
 

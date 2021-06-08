@@ -1,5 +1,8 @@
+import { ServiceProductService } from './../service-product.service';
 import { Product } from './../Model/Product';
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-product',
@@ -9,9 +12,21 @@ import { Component, Input, OnInit } from '@angular/core';
 
 export class ProductComponent implements OnInit {
   @Input()Product:Product ;
-  constructor() { }
+  constructor(private Service : ServiceProductService , private router:Router) { }
 
   ngOnInit(): void {
-  }
 
+  }
+Delete(id:number){
+
+  this.Service.deleteProduct(id).subscribe(data=>{
+    console.log(data) ;
+  })
+  window.location.reload();
+
+
+
+
+
+}
 }

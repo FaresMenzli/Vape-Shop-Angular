@@ -26,7 +26,7 @@ export class AddProductComponent implements OnInit {
     this.Service.postProduct(this.product).subscribe()
     setTimeout(() => {
       this.router.navigate(['listproduct'])
-    }, 1000);
+    }, 600);
 
 
 
