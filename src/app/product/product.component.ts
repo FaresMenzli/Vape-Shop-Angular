@@ -22,7 +22,10 @@ Delete(id:number){
   this.Service.deleteProduct(id).subscribe(data=>{
     console.log(data) ;
   })
-  window.location.reload();
+  setTimeout(() => {
+     window.location.reload();
+  }, 500);
+
 
 
 

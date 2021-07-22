@@ -1,31 +1,31 @@
 {
   "productlist": [
     {
-      "id": 1,
-      "name": "4",
+      "name": "Aegis X",
       "category": "Atomiseur",
-      "description": "desc 1",
-      "photo": "https://www.lepetitvapoteur.com/29842-thickbox/kit-aegis-max-geek-vape.jpg",
       "price": 18,
-      "rating": 5
+      "photo": "https://www.lepetitvapoteur.com/29842-thickbox/kit-aegis-max-geek-vape.jpg",
+      "description": "desc 1",
+      "rating": 5,
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "5",
+      "name": "Vampire",
       "category": "liquid",
-      "description": "desc 2",
-      "photo": "https://www.eliquidandco.com/18655-large_default/arome-concentre-vampire-vape-virginia.jpg",
       "price": 21,
-      "rating": 5
+      "photo": "https://www.eliquidandco.com/18655-large_default/arome-concentre-vampire-vape-virginia.jpg",
+      "description": "desc 2",
+      "rating": 5,
+      "id": 2
     },
     {
-      "id": 36,
-      "name": "Hope Carpenter",
+      "name": "Furry",
       "category": "Liquid",
       "price": "541",
       "photo": "https://www.lepetitvapoteur.com/29448-large_default/concentre-fury-30-ml-ultimate.jpg",
-      "description": "Reprehenderit at an",
-      "rating": 2
+      "description": "Fares",
+      "rating": 5,
+      "id": 36
     },
     {
       "id": 43,
@@ -43,15 +43,6 @@
       "price": "325",
       "photo": "https://www.lepetitvapoteur.com/31356-thickbox/concentre-ragnarok-legend-30-ml-ultimate.jpg",
       "description": "Dolores fugit quisq",
-      "rating": 2
-    },
-    {
-      "id": 74,
-      "name": "Frances Blevins",
-      "category": "Liquid",
-      "price": "116",
-      "photo": "Recusandae Unde ali",
-      "description": "Incidunt fugiat con",
       "rating": 2
     }
   ]
